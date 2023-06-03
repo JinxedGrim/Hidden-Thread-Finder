@@ -611,11 +611,11 @@ typedef struct _KAFFINITY_EX
     USHORT Size;
     ULONG Reserved;
     KAFFINITY Bitmap[20];
-} KAFFINITY_EX, * PKAFFINITY_EX;
+} KAFFINITY_EX, * PKAFFINITY_EX; //// Undoced struct 
 
 
-extern "C" NTHALAPI VOID FASTCALL HalSendNMI(KAFFINITY_EX Affinity);
+extern "C" NTHALAPI VOID FASTCALL HalSendNMI(KAFFINITY_EX Affinity); // // Undoced function 
 
-extern "C" VOID NTAPI KeInitializeAffinityEx(KAFFINITY_EX* Affinity);
+extern "C" VOID NTAPI KeInitializeAffinityEx(KAFFINITY_EX* Affinity); // // Undoced function 
 
-extern "C" VOID NTAPI KeAddProcessorAffinityEx(KAFFINITY_EX* Affinity, ULONG ProcessorBitmask);
+extern "C" VOID NTAPI KeAddProcessorAffinityEx(KAFFINITY_EX* Affinity, ULONG ProcessorBitmask); // // Undoced function 
